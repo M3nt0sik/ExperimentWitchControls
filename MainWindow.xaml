@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExperimentWitchControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Eksperyment z kontrolkami" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Wpisz liczbe" FontSize="18" Margin="10,10,0,0" 
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:Name="number" HorizontalAlignment="Center" Text="Liczba" 
+                   VerticalAlignment="Center" FontSize="24" Grid.Column="1" Grid.Row="0"/>
+        <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Margin="10,49,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" FontSize="18"/>
 
     </Grid>
 </Window>
