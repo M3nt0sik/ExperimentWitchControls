@@ -24,6 +24,12 @@
                  Text="0" VerticalAlignment="Top" Width="120" FontSize="18" 
                  TextChanged="numberTextBox_Text_Changed" 
                  PreviewTextInput="numberTextBox_PreviewTextImput"/>
+        <RadioButton Content="1" HorizontalAlignment="Left" Margin="289,49,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" />
+        <RadioButton Content="2" HorizontalAlignment="Left" Margin="319,49,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" />
+        <RadioButton Content="3" HorizontalAlignment="Left" Margin="349,49,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" />
+        <RadioButton Content="4" HorizontalAlignment="Left" Margin="289,64,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" />
+        <RadioButton Content="5" HorizontalAlignment="Left" Margin="319,64,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" />
+        <RadioButton Content="6" HorizontalAlignment="Left" Margin="349,64,0,0" VerticalAlignment="Top" Checked="radioButton_Checked" />
 
     </Grid>
 </Window>

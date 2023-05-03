@@ -35,5 +35,11 @@ namespace ExperimentWitchControls
         {
             e.Handled = !int.TryParse(e.Text, out int result);
         }
+
+        private void radioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton a = (RadioButton)sender;
+            number.Text = (string)a.Content;
+        }
     }
 }
