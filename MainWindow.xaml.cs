@@ -24,5 +24,16 @@ namespace ExperimentWitchControls
         {
             InitializeComponent();
         }
+
+        private void numberTextBox_Text_Changed(object sender, TextChangedEventArgs e)
+        {
+            number.Text = numberTextBox.Text;
+
+        }
+
+        private void numberTextBox_PreviewTextImput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !int.TryParse(e.Text, out int result);
+        }
     }
 }
