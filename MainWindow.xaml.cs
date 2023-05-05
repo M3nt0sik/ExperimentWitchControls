@@ -52,5 +52,13 @@ namespace ExperimentWitchControls
         {
             number.Text = bigSlider.Value.ToString("000-000-000");
         }
+
+        private void myListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(myListBox.SelectedItems is ListBoxItem listBoxItem)
+            {
+                number.Text = listBoxItem.Content.ToString();
+            }
+        }
     }
 }
