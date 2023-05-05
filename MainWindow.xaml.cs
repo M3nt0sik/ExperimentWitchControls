@@ -60,5 +60,21 @@ namespace ExperimentWitchControls
                 number.Text = listBoxItem.Content.ToString();
             }
         }
+
+        private void readOnlyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(readOnlyComboBox.SelectedItem is ListBoxItem listBoxItem)
+            {
+                number.Text = listBoxItem.Content.ToString();
+            }
+        }
+
+        private void editableComboBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(sender is ComboBox comboBox)
+            {
+                number.Text = comboBox.Text;
+            }
+        }
     }
 }

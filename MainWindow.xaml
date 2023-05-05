@@ -38,7 +38,7 @@
             <ListBoxItem Content="5"/>
         </ListBox>
         <ComboBox x:Name="readOnlyComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" 
-                  Grid.Row="1" VerticalAlignment="Top" Width="120" IsReadOnly="True">
+                  Grid.Row="1" VerticalAlignment="Top" Width="120" IsReadOnly="True" SelectionChanged="readOnlyComboBox_SelectionChanged">
             <ListBoxItem Content="1"/>
             <ListBoxItem Content="2"/>
             <ListBoxItem Content="3"/>
@@ -46,7 +46,7 @@
             <ListBoxItem Content="5"/>
         </ComboBox>
         <ComboBox x:Name="editableComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="270,10,0,0" 
-                  Grid.Row="1" VerticalAlignment="Top" Width="120" IsEditable="True">
+                  Grid.Row="1" VerticalAlignment="Top" Width="120" IsEditable="True" TextBoxBase.TextChanged="editableComboBox_TextChanged" PreviewTextInput="numberTextBox_PreviewTextImput">
             <ListBoxItem Content="1"/>
             <ListBoxItem Content="2"/>
             <ListBoxItem Content="3"/>
