@@ -38,8 +38,19 @@ namespace ExperimentWitchControls
 
         private void radioButton_Checked(object sender, RoutedEventArgs e)
         {
-            RadioButton a = (RadioButton)sender;
+            RadioButton a = (RadioButton)sender;//Inizjalizacja zmiennej i przypisanie jej obiektu wywołujacego
+            
             number.Text = (string)a.Content;
+        }
+
+        private void smalSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text = smalSlider.Value.ToString("0");
+        }
+
+        private void bigSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text = bigSlider.Value.ToString("000-000-000");
         }
     }
 }
